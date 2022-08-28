@@ -1,0 +1,246 @@
+.hero-section2 {
+  
+  
+    position: relative;
+    z-index: 1;
+   
+  /*background-attachment: fixed;
+    /*animation: clouds_animation 140s linear infinite;*/
+   background-size: 100vw auto;
+   top: 0;
+   
+  }
+
+
+
+
+ 
+  #mytitre h1
+  {
+   
+                                                
+    font-size: 3.2em;
+
+  
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+ 
+  }
+
+   
+  #mytitre p
+  {
+ 
+                                                
+    font-size: 2.3em;
+    color: #fff;
+
+  }
+
+.hero-section2:before {
+    filter: grayscale(100%);
+  }
+  
+
+  .hero-section2, .hero-section2 > .container > .row {
+    height: 100vh;
+    min-height: 880px;
+  }
+  .hero-section2.inner-page {
+    height: 60vh;
+    min-height: 0;
+  }
+  .hero-section2.inner-page .hero-text {
+    transform: translateY(-150px);
+    margin-top: -120px;
+  }
+  @media screen and (max-width: 992px) {
+    .hero-section2.inner-page .hero-text {
+      margin-top: -80px;
+    }
+  }
+ 
+  @media screen and (max-width: 992px) {
+    #mytitre h1 {
+      font-size: 2.3em;
+      text-align: center;
+      margin-top:5px;
+    }
+    #mytitre p {
+      font-size: 1.2em;
+     
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .hero-section2 .hero-text-image {
+      margin-top: 1rem;
+    }
+  }
+ 
+
+
+
+  
+
+.hero-section2 .iphone-wrap {
+    position: relative;
+  }
+  @media screen and (max-width: 992px) {
+    .hero-section2 .iphone-wrap {
+      text-align: center;
+    }
+  }
+  .hero-section2 .iphone-wrap .phone-2, .hero-section2 .iphone-wrap .phone-1 {
+    position: absolute;
+    
+    overflow: hidden;
+    left: 0;
+    margin-left:-150px;
+  
+  }
+  @media screen and (max-width: 992px) {
+    .hero-section2 .iphone-wrap .phone-2, .hero-section2 .iphone-wrap .phone-1 {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+       left:0;
+       right:0;
+       margin:auto;
+    }
+  }
+  
+
+
+  
+.hero-section2 .iphone-wrap .phone-2, .hero-section2 .iphone-wrap .phone-1 {
+  width: calc(100%+5px);
+  
+  height: auto;
+  }
+  
+  
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+ 
+                                                
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+  color: black;
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+.container11{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+.container11 .wrap{
+  position: relative;
+  display: flex;
+}
+.container11 .wrap span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc33,
+              0 0 50px #4fc3dc,
+              0 0 100px #4fc3dc;
+  animation: animated 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+@keyframes animated {
+  0%{
+      transform: translateY(100vh) scale(0);
+  }
+  100%{
+      transform: translateY(-10vh) scale(1);
+  }
+}
+.container11 .wrap span:nth-child(even){
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+
+    .ordre {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

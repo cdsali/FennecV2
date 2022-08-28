@@ -1,0 +1,224 @@
+
+
+
+
+
+
+
+.timeline {
+  position: relative;
+  padding: 100px 0;
+  width: 100%;
+    
+    /*background-image: url('../img/road.jpg');
+     */
+   color: white;
+   
+
+  background:  linear-gradient(to right, rgba(15, 15, 14, 0.6) 0%, rgba(20, 17, 4, 0.7) 100%);
+}
+.timeline::before {
+  content: '';
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+
+    
+    filter: drop-shadow(5px 5px 5px rgba(122, 4, 77, 0.123)); 
+
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+  transform-style: preserve-3d;
+	-webkit-tap-highlight-color: rgba(#000,0);
+  
+
+  font-family: "Lucida Console";
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+  background: rgba(255, 255, 255, 0.01);
+  color: var(--text-color-light);
+  box-shadow: var(--box-shadow-inset);
+  backdrop-filter: var(--filter-blur);
+  
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent transparent transparent transparent;
+}
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.01);
+  color: var(--text-color-light);
+  box-shadow: var(--box-shadow-inset);
+  backdrop-filter: var(--filter-blur);
+  /*
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+  background-color: red;*/
+  
+}
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent transparent;
+}
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+
+    
+    filter: drop-shadow(5px 5px 5px rgba(122, 4, 77, 0.123)); 
+
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+ 
+  /*background-image: url(../img/favicon.png);
+  background-size: cover;*/
+
+}
+.timeline a {
+  background: #bfc2cf;
+  color: #fff;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+   outline: none;
+  background: url(../img/down.png) no-repeat;
+  height: 40px;
+  width:40px;
+}
+.timeline a:hover,.timeline a:active,.timeline a:focus {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+.timeline .timeline-card {
+  padding: 0 !important;
+}
+.timeline .timeline-card p {
+  padding: 0 2.0rem;
+  font-size: 1.5em;
+
+}
+.timeline .timeline-card a {
+  margin-left: 20px;
+}
+.timeline .timeline-item .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('../img/NFT/fennec11.webp') center center no-repeat;
+  background-size: cover;
+}
+.timeline .timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline .timeline-img-header h2 {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+.timeline blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: rgb(175, 160, 160);
+  padding: 0 20px;
+}
+.timeline .date {
+  background: rgba(0, 0, 0, .3);
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2.5em;
+}
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+ }
+  .timeline .timeline-img {
+    left:38px;
+ }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+   
+ }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+ }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent transparent transparent transparent;
+ }
+
+
+ .timeline .timeline-card p {
+  padding: 0 1.2rem;
+  font-size: 1.2em;
+
+}
+}

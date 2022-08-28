@@ -1,0 +1,181 @@
+:root {
+    --speed: 3;
+}
+
+
+#slot
+{  
+    background: linear-gradient(to right, rgba(15, 15, 14, 0.7) 0%, rgba(20, 17, 4, 0.8) 100%);
+    padding-bottom:80px ;
+}
+
+
+.machine {
+  
+   background-size: cover;
+
+   box-shadow: 0 0 .2rem #fff,
+   0 0 .2rem #fff,
+   0 0 2rem #bc13fe,
+   0 0 0.8rem #bc13fe,
+   0 0 2.8rem #bc13fe,
+   inset 0 0 1.3rem #bc13fe; 
+   
+    height: auto;
+    width: 100%;
+    /* margin-top: 50px; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-self: center; */
+    
+  
+
+
+
+	
+
+    padding-bottom: 10px;
+}
+
+.slot {
+    
+    height: 275px;
+    width: 30%;
+    margin: 10px;
+   
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe; 
+
+    
+
+   
+
+    overflow: hidden;
+
+    font-size: 125px;
+
+    line-height: 275px;
+    text-align: center;
+
+  filter:drop-shadow(5px 5px 5px hsl(0deg  0% 0%  / 0.5));
+    
+}
+
+.slot  img{
+    width: 100%;
+    height: auto;
+
+   
+}
+
+@media (max-width: 772px) {
+    .slot  img{
+
+        width: 100%;
+    height: auto;
+    transform:scale(2);
+    
+    }
+  }
+
+.down {
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc((6 - var(--speed)) * 0.1s);
+    /* animation-duration: 0ms; */
+}
+
+.up {
+    animation-name: slotspin_rev;
+    animation-iteration-count: infinite;
+    animation-duration: calc((6 - var(--speed)) * 0.1s);
+}
+
+@keyframes slotspin {
+    0%{
+       /* transform: translateY(-275px);*/
+       opacity: 0;
+    }
+    100%{
+       /* transform: translateY(275px);*/
+       opacity: 1;
+    }
+}
+
+@keyframes slotspin_rev {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+#spd-btn
+{
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+
+#spd
+{
+    color: red;
+}
+
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #spd {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: white;
+    }
+    
+    #spd::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #ff1177;
+      margin-top: -1px;
+    }
+    
+    #spd::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #ffbf00;
+      box-shadow: -80px 0 0 80px #ff1177;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: white; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: white;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: white;
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #ff1177;
+}
+
+
+
+#wallet
+{
+
+}

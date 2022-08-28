@@ -1,0 +1,164 @@
+
+#FAQ {
+	height: 100%;
+	
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: transparent;
+	
+	padding: 15px;
+	
+	
+}
+
+#FAQ .fq {
+	margin-top: 30px;
+   
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+	transform: rotateY(8deg);
+	margin-bottom: 80px;
+    
+	
+}
+
+#FAQ  .side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: black;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+#FAQ  .content {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+#FAQ  .content h1 {
+	position: relative;
+    color: #fff;
+
+}
+#FAQ  .content p {
+	margin-top: 50px;
+	line-height: 2em;
+}
+#FAQ  .content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: #3e3;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#FAQ  .front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(../img/NFT/fennec11.webp);
+	height: 100%;
+}
+#FAQ  .back {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(../img/NFT/fennec16.webp);
+	height: auto;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+/*
+#benefits .fq:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+*/
+#FAQ  form {
+	text-align: left;
+  
+	top: 50%;
+	line-height: 2em;
+
+}
+#FAQ  .back h1 {
+	margin: 0;
+	color: black;
+}
+#FAQ  form label,
+#FAQ  form input {
+	display: block;
+	background-image: url('../img/down.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 50px; /* Adjust according to image size to push text across. */
+}
+#FAQ  form input,
+#FAQ  form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+#FAQ  form label {
+	margin: 15px 0;
+	color:black;
+	font-weight: bold;
+	 font-size:2.0em;
+	
+}
+#FAQ  form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+/* my button style  */
+#FAQ  .white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #fff;
+	transition: 0.35s ease-in-out;
+	position: fixed;
+	left: 15px;
+	bottom: 15px;
+	
+}
+
+
+/*
+#benefits .white-mode:hover {
+	background-color: #fff;
+	color: #122;
+}
+*/
+
+@media screen and (max-width: 992px) {
+	#FAQ  .fq {
+		padding: 1px;
+   }
+   #FAQ  form label {
+	
+	 font-size:0.9em;
+
+}
+}
