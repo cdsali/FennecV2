@@ -294,23 +294,12 @@ $(window).scroll(function() {
 
  
   var scrollPos = $(this).scrollTop() / 20;
-  
+
+   
  
-  
-/*
-  $('body,html').css({
-    'background-size' : 300+ scrollPos + '%'
-})
-*/
-/*
-  $('.planete').css({
-      'bottom': scrollPos/2 + '%'
-  })
-  */
+
  
-  $('#ship').css({
-    'margin-left': (scrollPos%100)-20+'%'
-})
+
 
 
 
@@ -346,7 +335,14 @@ var myElement = document.querySelector('#testi img');
 
  
 
+    if (window.matchMedia("(max-width: 767px)").matches) {
+     
+    }
 
+    else {
+        $('#ship').css({
+            'margin-left': (scrollPos % 100) - 20 + '%'
+        }) }
 
 })
 
