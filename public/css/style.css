@@ -33,11 +33,12 @@ backdrop-filter: saturate(80%);
 
 
 
-    background-image: url("../img/last.webp"),url("../img/only.webp"),url("../img/ciel1.webp");
+    background: url("../img/last.webp"),url("../img/only.webp"),url("../img/ciel1.webp");
     background-attachment: scroll,scroll,fixed;
     background-size: auto auto,100vw auto,100vw 100vh;
     background-position: 0 700px,0 600px,0px 0px;
     background-repeat: no-repeat,no-repeat,no-repeat;
+    
     /*
  background-position: center;
  
@@ -493,6 +494,10 @@ section {
 }
 
 
+
+
+
+
 .AllTitle {
     color: #bc13fe;
     font-weight: bold;
@@ -511,6 +516,18 @@ section {
     .AllTitle {
         font-size: 2rem;
     }
+
+    .new {
+        font-weight: bold;
+        font-family: 'Audiowide', cursive;
+        text-align: center;
+        font-size: 4rem;
+        filter: brightness(200%);
+        margin-bottom: 10px;
+        margin-top: 100px;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+    }
+
 }
 
 
