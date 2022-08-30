@@ -34,81 +34,12 @@ document.getElementById("imgf").animate([
 
 
 
-function enter()
-{
- 
-  let start = Date.now();
-
-      let timer = setInterval(function() {
-        let timePassed = Date.now() - start;
-
-       // document.querySelector("#f1 img ").style.marginLeft = timePassed / 2 + 'px';
-
-        if (timePassed > 20) {
-         // document.getElementById("imgfen").style.display="none";
-         document.getElementById("b1").style.display="none";
-         document.getElementById("background").style.display="none";
-
-        $('.zone').css({
-          
-          'top':'0',
-          'left':'0',
-          'right':'0',
-          'bottom':'0',
-          'margin' :'auto'
-      });
-       
-      let elt= document.querySelector(".hero-section");
-     // rotateFennec(elt);
-      //change(elt);
-      
-      elt.style.display="none";
-          //$('.hero-section').css("background", "url('../img/speed3.gif') no-repeat center center fixed");
-          //$('.hero-section').css("background-size", "cover");
-
-        //  $('.hero-section').css("display", "none");
-          $('#hero2').css("display", "");
-
-          clearInterval(timer);
-
-          
-
-          }
-
-         
-
-
-      }, 20);
-}
 
 
 
 
 
 
-
-
-
-
-function elementInViewport(el) {
-  var top = el.offsetTop;
-  var left = el.offsetLeft;
-  var width = el.offsetWidth;
-  var height = el.offsetHeight;
-
-  while(el.offsetParent) {
-    el = el.offsetParent;
-    top += el.offsetTop;
-    left += el.offsetLeft;
-  }
-
-  return (
-    top >= window.pageYOffset &&
-    left >= window.pageXOffset &&
-    (top + height) <= (window.pageYOffset + window.innerHeight) &&
-    (left + width) <= (window.pageXOffset + window.innerWidth)
-  );
-}
 
 
 
@@ -170,7 +101,17 @@ window.addEventListener('scroll',onScroll);
 
 }
 
-eventon('#text-path1','#text-container1');
+
+
+if (window.matchMedia("(max-width: 767px)").matches) {
+
+}
+
+else {
+   
+    eventon('#text-path1', '#text-container1');
+}
+
 
 
 $(window).scroll(function() {
@@ -225,7 +166,11 @@ var myElement = document.querySelector('#testi img');
     else {
         $('#ship').css({
             'margin-left': (scrollPos % 100) - 20 + '%'
-        }) }
+        })
+
+
+
+    }
 
 })
 
