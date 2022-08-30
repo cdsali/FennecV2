@@ -6,34 +6,36 @@ $(window).on('load', function () {
     $('#loading').hide();
 }) 
 
+function animate (obj){
+    document.getElementById(obj).animate([
+        // étapes/keyframes
+        { transform: 'translateY(0px)' },
+        { transform: 'translateY(-1px)' },
+        { transform: 'translateY(-2px)' },
+        { transform: 'translateY(-3px)' },
+        { transform: 'translateY(-4px)' },
+        { transform: 'translateY(-5px)' },
+        { transform: 'translateY(-6px)' },
+        { transform: 'translateY(-7px)' },
+        { transform: 'translateY(-8px)' },
+        { transform: 'translateY(-7px)' },
+        { transform: 'translateY(-6px)' },
+        { transform: 'translateY(-5px)' },
+        { transform: 'translateY(-4px)' },
+        { transform: 'translateY(-3px)' },
+        { transform: 'translateY(-2px)' },
+        { transform: 'translateY(-1px)' },
+        { transform: 'translateY(0px)' }
+    ], {
+        // temporisation
+        duration: 1000,
+        iterations: Infinity
+    });
 
-document.getElementById("imgf").animate([
-    // étapes/keyframes
-    { transform: 'translateY(0px)' },
-    { transform: 'translateY(-1px)' },
-    { transform: 'translateY(-2px)' },
-    { transform: 'translateY(-3px)' },
-    { transform: 'translateY(-4px)' },
-    { transform: 'translateY(-5px)' },
-    { transform: 'translateY(-6px)' },
-    { transform: 'translateY(-7px)' },
-    { transform: 'translateY(-8px)' },
-    { transform: 'translateY(-7px)' },
-    { transform: 'translateY(-6px)' },
-    { transform: 'translateY(-5px)' },
-    { transform: 'translateY(-4px)' },
-    { transform: 'translateY(-3px)' },
-    { transform: 'translateY(-2px)' },
-    { transform: 'translateY(-1px)' },
-    { transform: 'translateY(0px)' }
-  ], {
-    // temporisation
-    duration: 1000,
-    iterations: Infinity
-  });
+}
 
-
-
+animate("imgf");
+animate('ship');
 
 
 
@@ -160,7 +162,7 @@ var myElement = document.querySelector('#testi img');
  
 
     if (window.matchMedia("(max-width: 767px)").matches) {
-     
+       
     }
 
     else {
@@ -184,7 +186,7 @@ $(function() {
       var scroll = $(document).scrollTop();
       console.log('scroll=  ',scroll);
       $el.css({
-          'background-position':'50% '+(-.5*scroll)+'px'+',0 10%,0 0'
+          'background-position':'50% '+(-.4*scroll)+'px'+',0 10%,0 0'
       });
   });
 });

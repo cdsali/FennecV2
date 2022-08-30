@@ -33,12 +33,11 @@ backdrop-filter: saturate(80%);
 
 
 
-    background: url("../img/last.webp"),url("../img/only.webp"),url("../img/ciel1.webp");
+    background:  url("../img/last.webp"),url("../img/only.webp"),url("../img/ciel1.webp");
     background-attachment: scroll,scroll,fixed;
-    background-size: auto auto,100vw auto,100vw 100vh;
+    background-size:auto auto,100vw auto,100vw 100vh;
     background-position: 0 700px,0 600px,0px 0px;
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    
+    background-repeat:no-repeat,no-repeat,no-repeat;
     /*
  background-position: center;
  
@@ -528,9 +527,7 @@ section {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
     }
 
-    #ship{
-        display:none;
-    }
+  
 
 }
 
