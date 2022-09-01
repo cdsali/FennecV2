@@ -1,15 +1,12 @@
 .hero-section2 {
-  
-  
     position: relative;
     z-index: 1;
-   
-  /*background-attachment: fixed;
+    /*background-attachment: fixed;
     /*animation: clouds_animation 140s linear infinite;*/
-   background-size: 100vw auto;
-   top: 0;
-   
-  }
+    background-size: 100vw auto;
+    top: 0;
+    background: linear-gradient(to right, rgba(15, 15, 14, 0.3) 0%, rgba(20, 17, 4, 0.5) 100%);
+}
 
 
 
@@ -203,13 +200,14 @@
 .container11 .wrap{
   position: relative;
   display: flex;
+ float:right;
 }
 .container11 .wrap span{
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 5px;
+  height: 5px;
   background: #4fc3dc;
-  margin: 0 4px;
+  margin: 0 2px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px #4fc3dc33,
               0 0 50px #4fc3dc,

@@ -115,7 +115,7 @@ else {
 }
 
 
-
+var isphone=window.matchMedia("(max-width: 767px)").matches;
 $(window).scroll(function() {
 
  
@@ -161,7 +161,7 @@ var myElement = document.querySelector('#testi img');
 
  
 
-    if (window.matchMedia("(max-width: 767px)").matches) {
+    if (isphone) {
        
     }
 

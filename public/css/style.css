@@ -4,7 +4,7 @@ body {
     /*background-image: url("../img/city1.png");
 
  
-
+       
 
 background-size: 100vw auto;
 */
@@ -33,11 +33,12 @@ backdrop-filter: saturate(80%);
 
 
 
-    background:  url("../img/last.webp"),url("../img/only.webp"),url("../img/ciel1.webp");
+    background: url("../img/last.webp"),url("../img/only.webp"),url("../img/ciel1.webp");
     background-attachment: scroll,scroll,fixed;
-    background-size:auto auto,100vw auto,100vw 100vh;
+    background-size: auto auto,100vw auto,100vw 100vh;
     background-position: 0 700px,0 600px,0px 0px;
-    background-repeat:no-repeat,no-repeat,no-repeat;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+  
     /*
  background-position: center;
  
@@ -53,6 +54,7 @@ backdrop-filter: saturate(80%);
 
 * {
     font-family: 'Audiowide', cursive;
+    
 }
 
 ::-webkit-scrollbar {
